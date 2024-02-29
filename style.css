@@ -201,6 +201,77 @@ p span {
   margin-bottom: 7rem;
 }
 
+/* MY PROJECTS */
+.my-projects {
+  display: grid;
+  grid-template-areas:
+    "img img"
+    "p1 p2"
+    "p3 p4";
+  gap: 4em;
+}
+.my-projects u {
+  font-size: 30px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  grid-area: img;
+}
+.my-projects .project-links {
+  justify-content: center;
+  padding: 1em;
+  gap: 5px;
+}
+.my-projects h3 {
+  margin: 0;
+}
+.my-projects .disc {
+  padding: 10px;
+  margin-left: 40px;
+}
+.project-1 {
+  grid-area: p1;
+  background: rgba(79, 125, 174, 0.498);
+  border: 2px solid black;
+}
+.project-2 {
+  grid-area: p2;
+  background: white;
+  border: 2px solid black;
+  background: rgba(79, 125, 174, 0.498);
+}
+.project-3 {
+  grid-area: p3;
+  background: white;
+  border: 2px solid black;
+  background: rgba(79, 125, 174, 0.498);
+}
+.project-4 {
+  grid-area: p4;
+  background: white;
+  border: 2px solid black;
+  background: rgba(79, 125, 174, 0.498);
+}
+
+/* ABOUT ME */
+.about-me {
+  background: lightgreen;
+  margin: 40px 0;
+}
+.about-me .title {
+  font-weight: bold;
+  font-size: 30px;
+  justify-content: center;
+  padding: 2rem;
+}
+.about-me .content {
+  justify-content: center;
+
+  flex-direction: column;
+}
+
 /* FOOTER */
 footer {
   background: black;
