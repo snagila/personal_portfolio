@@ -70,6 +70,7 @@ header {
   background: var(--body-bg);
   box-shadow: var(--shadow);
   top: 0;
+  position: sticky;
 }
 header .header {
   justify-content: space-between;
@@ -102,6 +103,11 @@ header .header {
   gap: 2rem;
   font-weight: bold;
   margin-top: 30px;
+}
+.title_right ul li:hover {
+  transform: scale(1.5);
+  color: red;
+  transition: all 0.3s;
 }
 
 /* HERO SECTION */
@@ -144,6 +150,10 @@ p span {
   padding: 10px 2em;
   border: none;
   font-size: large;
+}
+.hero-disc button:hover {
+  transform: scale(1.5);
+  transition: all 0.3s;
 }
 
 /*  BANNER */
@@ -202,23 +212,23 @@ p span {
 }
 
 /* MY PROJECTS */
-.my-projects {
+.project-title span {
+  font-size: 2em;
+  border-bottom: 2px solid red;
+}
+.project-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.projects {
   display: grid;
   grid-template-areas:
-    "img img"
     "p1 p2"
     "p3 p4";
   gap: 4em;
 }
-.my-projects u {
-  font-size: 30px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  grid-area: img;
-}
 .my-projects .project-links {
   justify-content: center;
   padding: 1em;
@@ -260,21 +270,77 @@ p span {
   background: lightgreen;
   margin: 40px 0;
 }
-.about-me .title {
+.about_title span {
   font-weight: bold;
   font-size: 30px;
   justify-content: center;
-  padding: 2rem;
+  border-bottom: 2px solid red;
+}
+.about_title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 .about-me .content {
   justify-content: center;
 
   flex-direction: column;
 }
+.about-me .img {
+  margin-bottom: -5px;
+}
 
+/* CONTACT */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact_title span {
+  border-bottom: 2px solid red;
+}
+.contact-icons {
+  font-size: 1.5em;
+  gap: 30px;
+}
+.email-section {
+  background: black;
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  margin-bottom: 1em;
+  border-radius: 20px;
+  font-size: large;
+}
+.send {
+  height: 30px;
+  width: 30px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+}
 /* FOOTER */
 footer {
   background: black;
   padding: 3em;
   color: white;
+  text-align: center;
+}
+.goup {
+  position: fixed;
+  color: black;
+
+  bottom: 70px;
+  right: 100px;
+  height: 40px;
+  width: 40px;
+  background: orangered;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

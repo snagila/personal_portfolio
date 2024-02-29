@@ -28,7 +28,7 @@
       ><i class="fa-solid fa-circle-half-stroke"></i
     ></label>
     <input type="checkbox" id="darkMode" />
-    <div class="wrapper">
+    <div class="wrapper" id="Home">
       <!--   NAV BAR -->
       <header>
         <div class="header container flex">
@@ -42,11 +42,11 @@
           </div>
           <div class="title_right">
             <ul class="list flex">
-              <li><a href="">Home</a></li>
-              <li><a href="">Skills</a></li>
-              <li><a href="">Projects</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#Projects">Projects</a></li>
+              <li><a href="#About">About</a></li>
+              <li><a href="#Contact">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -58,7 +58,9 @@
           <p>Hi I'm <span> Sachin Nagila</span></p>
           <span>Full Stack Developer</span>
           <p>I love coding and teach others what I know</p>
-          <button>Download CV <i class="fa-solid fa-download"></i></button>
+          <a href="./assets/profie pic.png" download="test image"
+            ><button>Download CV <i class="fa-solid fa-download"></i></button
+          ></a>
         </div>
         <div class="image">
           <img src="./assets/profie pic.png" width="100%" alt="" />
@@ -97,7 +99,7 @@
       </section>
 
       <!-- SKILLS -->
-      <div class="skills container flex">
+      <div class="skills container flex" id="Skills">
         <div class="skill-title">
           <p>Skills</p>
         </div>
@@ -129,59 +131,64 @@
       </div>
 
       <!-- MY PROJECTS -->
-      <div class="my-projects container">
-        <u style="color: red">My Projects</u>
-        <div class="project-1">
-          <img src="./assets/projects.png" width="100%" alt="" />
-          <div class="project-links flex">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-chrome"></i>
+      <div class="my-projects container" id="Projects">
+        <h2 class="project-title flex">
+          <span>My Projects</span>
+        </h2>
+        <div class="projects">
+          <div class="project-1">
+            <img src="./assets/projects.png" width="100%" alt="" />
+            <div class="project-links flex">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </div>
+            <div class="disc">
+              <h3>Personal Portfolio</h3>
+              <span>Techstack: HTML, CSS, Javascript, React</span>
+            </div>
           </div>
-          <div class="disc">
-            <h3>Personal Portfolio</h3>
-            <span>Techstack: HTML, CSS, Javascript, React</span>
+          <div class="project-2">
+            <img src="./assets/projects.png" width="100%" alt="" />
+            <div class="project-links flex">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </div>
+            <div class="disc">
+              <h3>Personal Portfolio</h3>
+              <span>Techstack: HTML, CSS, Javascript, React</span>
+            </div>
           </div>
-        </div>
-
-        <div class="project-2">
-          <img src="./assets/projects.png" width="100%" alt="" />
-          <div class="project-links flex">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-chrome"></i>
+          <div class="project-3">
+            <img src="./assets/projects.png" width="100%" alt="" />
+            <div class="project-links flex">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </div>
+            <div class="disc">
+              <h3>Personal Portfolio</h3>
+              <span>Techstack: HTML, CSS, Javascript, React</span>
+            </div>
           </div>
-          <div class="disc">
-            <h3>Personal Portfolio</h3>
-            <span>Techstack: HTML, CSS, Javascript, React</span>
-          </div>
-        </div>
-        <div class="project-3">
-          <img src="./assets/projects.png" width="100%" alt="" />
-          <div class="project-links flex">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-chrome"></i>
-          </div>
-          <div class="disc">
-            <h3>Personal Portfolio</h3>
-            <span>Techstack: HTML, CSS, Javascript, React</span>
-          </div>
-        </div>
-        <div class="project-4">
-          <img src="./assets/projects.png" width="100%" alt="" />
-          <div class="project-links flex">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-chrome"></i>
-          </div>
-          <div class="disc">
-            <h3>Personal Portfolio</h3>
-            <span>Techstack: HTML, CSS, Javascript, React</span>
+          <div class="project-4">
+            <img src="./assets/projects.png" width="100%" alt="" />
+            <div class="project-links flex">
+              <i class="fa-brands fa-github"></i>
+              <i class="fa-brands fa-chrome"></i>
+            </div>
+            <div class="disc">
+              <h3>Personal Portfolio</h3>
+              <span>Techstack: HTML, CSS, Javascript, React</span>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- ABOUT ME -->
-      <div class="about-me">
+      <div class="about-me" id="#About">
         <div class="container">
-          <div class="title flex"><u>About me</u></div>
+          <p class="about_title">
+            <span>About me</span>
+          </p>
           <div class="disc flex">
             <div class="img">
               <img src="./assets/profie pic.png" width="80%" />
@@ -199,7 +206,7 @@
               <h3>Sydney, Australia</h3>
               <div class="interest">
                 <h3>Interest</h3>
-                <span>Cosing</span>
+                <span>Coding</span>
                 <span
                   >Football
                   <span>Super Hero Movies</span>
@@ -209,7 +216,36 @@
           </div>
         </div>
       </div>
+
+      <!-- CONTACT -->
+      <div class="contact" id="Contact">
+        <p class="contact_title">
+          <span>Contact</span>
+        </p>
+        <div class="contact-icons flex">
+          <a href="www.linkedin.com" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="www.github.com" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="www.youtube.com" target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="tel:0410263444"><i class="fa-solid fa-mobile"></i></a>
+        </div>
+        <h3>OR</h3>
+        <div class="email-section">
+          <a href="mailto:real@email.com"><span>your-email@gmail.com</span></a>
+          <div class="send">
+            <i class="fa-solid fa-paper-plane"></i>
+          </div>
+        </div>
+      </div>
     </div>
-    <footer>jgsdfjhgsdfj</footer>
+
+    <footer>@Sachin_Nagila</footer>
+
+    <a href="#Home" class="goup"><i class="fa-solid fa-up-long"></i></a>
   </body>
 </html>
